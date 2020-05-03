@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import {FiLogIn } from 'react-icons/fi';
+import {FiLogIn, FiTrash, FiEdit } from 'react-icons/fi';
 import logoImg from '../../assets/logo.png';
 import contactImg from '../../assets/contacts.png';
 
@@ -31,7 +31,7 @@ const Dashboard: React.FC = () => {
       </SingIn>
 
       <Contacts>
-        <Link to="teste">
+        <article>
           <span>
             <img src={contactImg} alt="Imagem de Contato" />
           </span>
@@ -40,8 +40,12 @@ const Dashboard: React.FC = () => {
             <p>61 981772154</p>
             <p>martins.josemn@gmail.com</p>
           </div>
-        </Link>
-        <Link to="teste">
+          <span>            
+            <FiEdit color="#1a73e8" />
+            <FiTrash color="#dd574c" />
+          </span>
+        </article>
+        <article>
           <span>
             <img src={contactImg} alt="Imagem de Contato" />
           </span>
@@ -50,8 +54,12 @@ const Dashboard: React.FC = () => {
             <p>61 981772154</p>
             <p>martins.josemn@gmail.com</p>
           </div>
-        </Link>
-        <Link to="teste">
+          <span>            
+            <FiEdit color="#1a73e8" />
+            <FiTrash color="#dd574c" />
+          </span>
+        </article>
+        <article>
           <span>
             <img src={contactImg} alt="Imagem de Contato" />
           </span>
@@ -60,7 +68,12 @@ const Dashboard: React.FC = () => {
             <p>61 981772154</p>
             <p>martins.josemn@gmail.com</p>
           </div>
-        </Link>
+          <span>            
+            <FiEdit color="#1a73e8" />
+            <FiTrash color="#dd574c" />
+          </span>
+        </article>
+
       </Contacts>
 
     </>

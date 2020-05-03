@@ -94,7 +94,7 @@ export const Contacts = styled.div`
       }
     }
 
-    a{
+    article{
       text-decoration: none;
       display: flex;
       align-items: center;
@@ -105,11 +105,15 @@ export const Contacts = styled.div`
       transition: transform 0.2s;
 
       &:hover{
-        transform: translate(15px);
-
+        transform: translate(10px);
       }
 
-      & + a{
+      svg{
+        font-size: 30px;
+        padding: 2px;
+      }      
+
+      & + article{
         margin-top: 16px;
       }     
     }
